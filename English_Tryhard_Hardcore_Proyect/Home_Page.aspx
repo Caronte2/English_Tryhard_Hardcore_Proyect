@@ -11,7 +11,7 @@
     <header>
 
     <a href="#"><img class="logo" src="../img/img_logo.png" alt="Website logo"></a> 
-    <button><a href="#">Log in</a></button>
+    <asp:Button ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
 
 
     </header>
