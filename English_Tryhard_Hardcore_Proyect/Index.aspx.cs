@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace English_Tryhard_Hardcore_Proyect
 {
-    public partial class Home_Page : System.Web.UI.Page
+    public partial class WebForm1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -11,7 +11,7 @@ namespace English_Tryhard_Hardcore_Proyect
 {
 
 
-    public partial class Home_Page
+    public partial class WebForm1
     {
     }
 }
