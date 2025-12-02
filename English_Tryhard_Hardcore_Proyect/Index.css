@@ -1,0 +1,126 @@
+﻿/*  paleta de colores */
+:root {
+    --crema-arena: #F7EEDB;
+    --beige-calido: #E6D8C3;
+    --azul-suave: #A7C7D9;
+    --azul-profundo: #335C81;
+    --oro-tenue: #2f2f2f;
+    --font-main: "Segoe UI", Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--crema-arena);
+    color: var(--azul-profundo);
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between; /* Logo izq, nav der */
+    align-items: center;
+    padding: 0px 15px;
+    background-color: var(--oro-tenue);
+    /*border-bottom: 2px solid var(--azul-suave);*/
+}
+
+    header .logo {
+        height:150px;
+    }
+
+/* boton log in */
+nav ul {
+    list-style: none;
+}
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--azul-profundo);
+            font-weight: 600;
+            padding: 8px 14px;
+            border-radius: 6px;
+        }
+
+            nav ul li a:hover {
+                background-color: var(--azul-profundo   );
+                color: white;
+            }
+
+/* titulo pagina*/
+main h3 {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* servicios */
+section {
+    display: flex;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 80px;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--beige-calido);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+    section:first-of-type {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    section:last-of-type {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+
+    /* Alternar automáticamente la posición de la imagen */
+    section:nth-child(even) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+        section:nth-child(even) img {
+            order: -1; /* Mueve la imagen a la izquierda */
+        }
+
+    /* Imagen */
+    section img {
+        width: 300px;
+        height: auto;
+        border-radius: 12px;
+        object-fit: cover;
+        border: 3px solid var(--azul-suave);
+    }
+
+    /* Textos */
+    section p {
+        width: 50%;
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: justify;
+        padding: 20px;
+        background-color: var(--crema-arena);
+        border-radius: 10px;
+        border-left: 6px solid var(--oro-tenue);
+    }
+
+/* footer */
+footer {
+    background-color: var(--azul-profundo);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
