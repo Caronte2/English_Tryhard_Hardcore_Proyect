@@ -13,7 +13,7 @@ namespace English_Tryhard_Hardcore_Proyect
         private string mobile;
         private string role;
         private string dateOfBirth;
-
+        private string password;
         public UserClass(int id, string name, string email, string role, string dateOfBirth, string mobile)
         {
             this.id = id;
@@ -58,6 +58,12 @@ namespace English_Tryhard_Hardcore_Proyect
         {
             get { return mobile; }
             set { mobile = value; }
+        }
+
+        public string Password
+        {
+            get { return password; }
+            set { password = value; }
         }
     }
 }
