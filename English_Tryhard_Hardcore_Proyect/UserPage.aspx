@@ -1,27 +1,83 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UserPage.aspx.cs" Inherits="English_Tryhard_Hardcore_Proyect.UserPage" %>
 
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users Landing Page</title>
+    <link rel="stylesheet" href="UserPage.css" />
 </head>
+
 <body>
-    <form id="form1" runat="server">
-        <div>
 
-            <asp:Label ID="Label1" runat="server" Text="Name:"></asp:Label>
-            <asp:Label ID="LabelName" runat="server" Text=""></asp:Label>
-            <asp:Label ID="Label3" runat="server" Text="Email:"></asp:Label>
-            <asp:Label ID="LabelEmail" runat="server" Text=""></asp:Label>
-            <asp:Label ID="Label5" runat="server" Text="Date:"></asp:Label>
-            <asp:Label ID="LabelDate" runat="server" Text=""></asp:Label>
-            <asp:Label ID="Label7" runat="server" Text="Mobile:"></asp:Label>
-            <asp:Label ID="LabelMobile" runat="server" Text=""></asp:Label>
+    <header>
+        <a href="#">
+            <img class="logo" src="../img/img_logo_sin_fondo.png" alt="Website logo" />
+        </a>
 
-            <asp:ListBox ID="ListBox1" runat="server" AutoPostBack="True" Height="191px" Width="267px"></asp:ListBox>
-            <asp:Label ID="Label8" runat="server" Text="Label"></asp:Label>
-        </div>
-    </form>
+        <nav>
+            <ul>
+                <li><a href="#">Log in</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Tus datos</h2>
+        <form id="form1" runat="server">
+            <div class="user-info">
+
+                <div class="info-row">
+                    <asp:Label ID="Label1" runat="server" Text="Name:" CssClass="label-title"></asp:Label>
+                    <asp:Label ID="LabelName" runat="server" Text=""></asp:Label>
+                </div>
+
+                <div class="info-row">
+                    <asp:Label ID="Label3" runat="server" Text="Email:" CssClass="label-title"></asp:Label>
+                    <asp:Label ID="LabelEmail" runat="server" Text=""></asp:Label>
+                </div>
+
+                <div class="info-row">
+                    <asp:Label ID="Label5" runat="server" Text="Date:" CssClass="label-title"></asp:Label>
+                    <asp:Label ID="LabelDate" runat="server" Text=""></asp:Label>
+                </div>
+
+                <div class="info-row">
+                    <asp:Label ID="Label7" runat="server" Text="Mobile:" CssClass="label-title"></asp:Label>
+                    <asp:Label ID="LabelMobile" runat="server" Text=""></asp:Label>
+                </div>
+
+                <div class="info-row">
+                    <asp:Label ID="Label9" runat="server" Text="Address:" CssClass="label-title"></asp:Label>
+                    <asp:Label ID="LabelAddress" runat="server" Text=""></asp:Label>
+                </div>
+
+                <div class="info-row">
+                    <asp:Label ID="Label11" runat="server" Text="Rol:" CssClass="label-title"></asp:Label>
+                    <asp:Label ID="LabelRol" runat="server" Text=""></asp:Label>
+                </div>
+                
+                <div></div>
+
+                <div class="button-container">
+                    <asp:ListBox ID="ListBoxBooking" runat="server"></asp:ListBox>
+                </div>
+
+            </div>
+                
+            
+        </form>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados</p>
+    </footer>
+
 </body>
 </html>
+
+<!--
+    ᘛ⁐ᕐᐷ   <--Pelusín
+-->
+                        

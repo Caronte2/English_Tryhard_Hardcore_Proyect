@@ -27,33 +27,33 @@
         
         <div class="sections-wrapper"> 
             <section class="servicio_1">
-                <div class="texto-servicio"> <%-- Envuelve h4 y p --%>
+                <div class="texto-servicio"> 
                     <h4>Servicio estandar</h4>
                     <p>pepe</p>
                 </div>
                 <img src="../img/habitacion_estandar.png" alt="Imagen servicio 1" />
             </section>
 
-            <span class="separator"></span> <%-- Fuera de la section --%>
+            <span class="separator"></span> 
 
             <section class="servicio_2">
-                <div class="texto-servicio"> <%-- Envuelve h4 y p --%>
+                <div class="texto-servicio"> 
                     <h4>Servicio vip</h4>
                     <p>pepe</p> 
                 </div>
                 <img src="../img/habitacion_suite.png" alt="Imagen servicio 2" />
             </section>
 
-            <span class="separator"></span> <%-- Fuera de la section --%>
+            <span class="separator"></span> 
 
             <section class="servicio_3">
-                <div class="texto-servicio"> <%-- Envuelve h4 y p --%>
+                <div class="texto-servicio"> 
                     <h4>Servicio catering</h4>
                     <p>pepe</p>
                 </div>
                 <img src="../img/servicio_habitacion.png" alt="Imagen servicio 3" />
             </section>
-        </div> <%-- Cierra sections-wrapper --%>
+        </div> 
     </main>
 
     <footer>
