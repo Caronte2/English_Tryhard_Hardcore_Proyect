@@ -11,13 +11,13 @@
         <div>
 
             <asp:Label ID="Label1" runat="server" Text="Name:"></asp:Label>
-            <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
+            <asp:Label ID="LabelName" runat="server" Text=""></asp:Label>
             <asp:Label ID="Label3" runat="server" Text="Email:"></asp:Label>
-            <asp:Label ID="Label4" runat="server" Text=""></asp:Label>
+            <asp:Label ID="LabelEmail" runat="server" Text=""></asp:Label>
             <asp:Label ID="Label5" runat="server" Text="Date:"></asp:Label>
-            <asp:Label ID="Label6" runat="server" Text=""></asp:Label>
+            <asp:Label ID="LabelDate" runat="server" Text=""></asp:Label>
             <asp:Label ID="Label7" runat="server" Text="Mobile:"></asp:Label>
-            <asp:Label ID="Label8" runat="server" Text=""></asp:Label>
+            <asp:Label ID="LabelMobile" runat="server" Text=""></asp:Label>
 
         </div>
     </form>

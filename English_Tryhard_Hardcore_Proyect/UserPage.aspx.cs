@@ -17,6 +17,13 @@ namespace English_Tryhard_Hardcore_Proyect
             {
                 Label1.Text = "No user is logged in.";
             }
+            else
+            {
+                LabelName.Text = user.Name;
+                LabelEmail.Text = user.Email;
+                LabelDate.Text = user.DateOfBirth;
+                LabelMobile.Text = user.Mobile;
+            }
             
         }
     }
