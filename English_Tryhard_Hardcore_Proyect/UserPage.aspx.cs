@@ -34,7 +34,7 @@ namespace English_Tryhard_Hardcore_Proyect
                 for (int i = 0; i < reservationList.Count; i++)
                 {
                     string texto = "Reserva " + reservationList[i].IdUser + ": " + reservationList[i].EntryDate + " - " + reservationList[i].DepartureDate + "Room:" + reservationList[i].Room;
-                    ListBox1.Items.Add(texto);
+                    ListBoxBooking.Items.Add(texto);
                 }
             }
         }
@@ -78,7 +78,7 @@ namespace English_Tryhard_Hardcore_Proyect
             }
             catch (Exception ex)
             {
-                Label8.Text = "An error occurred: " + ex.Message;
+                ListBoxBooking.Items.Add(ex.Message);
             }
 
             return reservations;

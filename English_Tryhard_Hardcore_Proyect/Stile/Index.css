@@ -22,7 +22,7 @@ body {
 /* header */
 header {
     display: flex;
-    justify-content: space-between; /* Logo izq, nav der */
+    justify-content: space-between;
     align-items: center;
     padding: 0px 15px;
     background-color: var(--oro-tenue);
@@ -224,7 +224,6 @@ footer {
 
     section img {
         max-width: 300px;
-        margin-top:  12px;
-            
+        margin-top: 12px;
     }
 }
