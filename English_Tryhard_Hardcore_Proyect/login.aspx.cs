@@ -32,11 +32,11 @@ namespace English_Tryhard_Hardcore_Proyect
             }
             try
             {
-                string DBpath = Server.MapPath("~/Bbdd/data.db");
+                string DBpath = Server.MapPath("~/DateBase/BBDD_English.db");
                 SQLiteConnection conn = new SQLiteConnection("Data Source=" + DBpath + ";Version=3;");
                 conn.Open();
 
-                string query = "SELECT Rol FROM Users WHERE Email = @email AND Password = @password";
+                string query = "SELECT Id,Name,FOD,Address,Mobile,Rol,Email FROM Users WHERE Email = @email AND Password = @password";
 
                 using (SQLiteCommand command = new SQLiteCommand(query, conn))
                 {
@@ -47,15 +47,25 @@ namespace English_Tryhard_Hardcore_Proyect
                     {
                         if (reader.Read()) 
                         {
-                            string rol = reader["Rol"].ToString();
-                            if (rol == "user")
+                            
+                            UserClass user = new UserClass(
+                                reader.GetInt32(0),
+                                reader.GetString(1),
+                                reader.GetString(6),
+                                reader.GetString(5),
+                                reader.GetString(2),
+                                reader.GetString(4)
+                            );
+
+                            if (user.Role == "user")
                             {
-                                Response.Redirect("");
-                            }else if(rol == "receptionist")
+                                Session["User"] = user;
+                                Response.Redirect("./UserPage.aspx");
+                            }else if(user.Role == "receptionist")
                             {
-                                Response.Redirect("");
+                                Response.Redirect("./ReceptionistPage.aspx");
                             }
-                        }else if{
+                        }else{
                             Label3.Text = "Invalid email or password.";
                         }
                     }
