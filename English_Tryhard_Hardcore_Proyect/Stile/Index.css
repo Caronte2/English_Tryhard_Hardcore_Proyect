@@ -26,11 +26,12 @@ header {
     align-items: center;
     padding: 0px 15px;
     background-color: var(--oro-tenue);
-    /*border-bottom: 2px solid var(--azul-suave);*/
+    /border-bottom: 2px solid var(--azul-suave);
+    /
 }
 
     header .logo {
-        height: 150px;
+        height: 120px;
     }
 
 /* boton log in */
@@ -47,7 +48,7 @@ nav ul {
             width: auto;
             height: auto;
             text-decoration: none;
-            font-size:24px;
+            font-size: 24px;
             color: var(--azul-profundo);
             font-weight: 600;
             padding: 8px 14px;
@@ -82,41 +83,42 @@ section {
     display: flex;
     flex-direction: column; /* Apila h4 y p verticalmente */
     max-width: 60%; /* Limita el ancho máximo del bloque de texto para evitar que se estire demasiado */
-    margin:30px;
+    margin: 30px;
     flex-grow: 1; /* Permite que crezca para llenar el espacio disponible */
 }
 
-    section:last-of-type {
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
+section:last-of-type {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 
-    /* Alternar automáticamente la posición de la imagen y ahora el  */
-    section:nth-of-type(2) {
-        flex-direction: row-reverse; /* Cambia el orden de los elementos en secciones pares */
-    }
+/* Alternar automáticamente la posición de la imagen y ahora el  */
+section:nth-of-type(2) {
+    flex-direction: row-reverse; /* Cambia el orden de los elementos en secciones pares */
+}
 
-    /* Imagen */
-    section img {
-        width: 400px;
-        height: auto;
-        border-radius: 12px;
-        object-fit: cover;
-        border: 3px solid var(--oro-tenue);
-        order: 2; /* Por defecto, la imagen va después de h4 y p */
-        flex-shrink: 0; /* Evita que la imagen se reduzca demasiado en pantallas grandes */
-    }
+/* Imagen */
+section img {
+    width: 400px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 3px solid var(--oro-tenue);
+    order: 2; /* Por defecto, la imagen va después de h4 y p */
+    flex-shrink: 0; /* Evita que la imagen se reduzca demasiado en pantallas grandes */
+}
 
-    /* Títulos dentro de las secciones */
-    section h4 {
-        font-size: 24px;
-        font-weight: 700;
-        margin-bottom: 12px;
-        color: var(--azul-profundo);
-        text-align: center; /* Alineado a la izquierda por defecto */
-        text-decoration: underline;
-        order: 0; /* Asegura que el h4 esté primero */
-    }
+/* Títulos dentro de las secciones */
+section h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--azul-profundo);
+    text-align: center; /* Alineado a la izquierda por defecto */
+    text-decoration: underline;
+    order: 0; /* Asegura que el h4 esté primero */
+}
+
 .sections-wrapper {
     background-color: var(--beige-calido);
     width: 80%; /* Ancho del contenedor principal de las secciones */
@@ -135,17 +137,17 @@ section {
     border-radius: 1px;
 }
 
-    /* Textos */
-    section p {
-        font-size: 18px;
-        line-height: 1.5;
-        text-align: justify;
-        padding: 20px;
-        background-color: var(--crema-arena);
-        border-radius: 10px;
-        border-left: 6px solid var(--oro-tenue);
-        order: 1; /* El párrafo va después del h4 */
-    }
+/* Textos */
+section p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 20px;
+    background-color: var(--crema-arena);
+    border-radius: 10px;
+    border-left: 6px solid var(--oro-tenue);
+    order: 1; /* El párrafo va después del h4 */
+}
 
 /* footer */
 footer {
@@ -165,6 +167,7 @@ footer {
         text-align: center;
         padding: 30px 40px;
     }
+
         section:nth-of-type(2) {
             flex-direction: column; /* Cambia el orden de los elementos en secciones pares */
         }
@@ -178,24 +181,24 @@ footer {
             width: 100%; /* Ocupa todo el ancho */
         }
 
-        .texto-servicio{
-            width: 100%;
-            max-width: 400px;
-        }
+    .texto-servicio {
+        width: 100%;
+        max-width: 400px;
+    }
 
-        section p {
-            order: 1; /* El párrafo va después del h4 */
-            width: auto;
-            font-size: 17px;
-            padding: 18px;
-        }
+    section p {
+        order: 1; /* El párrafo va después del h4 */
+        width: auto;
+        font-size: 17px;
+        padding: 18px;
+    }
 
-        section img {
-            order: 2; /* La imagen va al final */
-            max-width: 400px;
-            width: 90%;
-            margin-top: 10px;
-        }
+    section img {
+        order: 2; /* La imagen va al final */
+        max-width: 400px;
+        width: 90%;
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -214,13 +217,14 @@ footer {
             padding: 14px;
         }
 
-        .texto-servicio {
-            width: 100%;
-            max-width: 300px;
-        }   
+    .texto-servicio {
+        width: 100%;
+        max-width: 300px;
+    }
 
-        section img {
-            max-width: 300px;
-            margin-top: 12px;
-        }
+    section img {
+        max-width: 300px;
+        margin-top:  12px;
+            
+    }
 }

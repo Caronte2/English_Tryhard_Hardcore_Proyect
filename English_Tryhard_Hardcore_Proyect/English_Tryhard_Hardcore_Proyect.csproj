@@ -73,24 +73,16 @@
     <Content Include="img\habitacion_suite.png" />
     <Content Include="img\img_logo_sin_fondo.png" />
     <Content Include="img\servicio_habitacion.png" />
-    <Content Include="Index.aspx" />
     <Content Include="img\img_logo.png" />
-    <Content Include="Index.css" />
+    <Content Include="Index.aspx" />
+    <Content Include="Stile\Index.css" />
     <Content Include="ReceptionistPage.aspx" />
     <Content Include="UserPage.aspx" />
     <Content Include="Web.config" />
-    <Content Include="index.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ReceptionistPage.aspx.cs">
-      <DependentUpon>ReceptionistPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ReceptionistPage.aspx.designer.cs">
-      <DependentUpon>ReceptionistPage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserClass.cs" />
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -98,14 +90,15 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="ReceptionistPage.aspx.cs">
+      <DependentUpon>ReceptionistPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="ReceptionistPage.aspx.designer.cs">
+      <DependentUpon>ReceptionistPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Class\UserClass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -119,6 +112,13 @@
     </Compile>
     <Compile Include="UserPage.aspx.designer.cs">
       <DependentUpon>UserPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
