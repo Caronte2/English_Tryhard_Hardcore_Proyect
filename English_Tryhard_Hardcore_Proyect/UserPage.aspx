@@ -19,6 +19,8 @@
             <asp:Label ID="Label7" runat="server" Text="Mobile:"></asp:Label>
             <asp:Label ID="LabelMobile" runat="server" Text=""></asp:Label>
 
+            <asp:ListBox ID="ListBox1" runat="server" AutoPostBack="True" Height="191px" Width="267px"></asp:ListBox>
+            <asp:Label ID="Label8" runat="server" Text="Label"></asp:Label>
         </div>
     </form>
 </body>
