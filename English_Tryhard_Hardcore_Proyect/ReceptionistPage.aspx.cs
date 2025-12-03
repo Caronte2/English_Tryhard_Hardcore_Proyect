@@ -1,4 +1,5 @@
-﻿using System;
+﻿using English_Tryhard_Hardcore_Proyect.Class;
+using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
 using System.Linq;
@@ -107,6 +108,55 @@ namespace English_Tryhard_Hardcore_Proyect
             catch (Exception ex)
             {
                 Label2.Text = "An error occurred: " + ex.Message;
+            }
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            string email, room, departureDate, entryDate;
+            email = TextMakeBookingUserEmail.Text;
+            room = TextMakeBookingRoomNumber.Text;
+            departureDate = TextMakeBookingCheckInDate.Text;
+            entryDate = TextMakeBookingCheckOutDate.Text;
+
+            try
+            {
+                string DBpath = Server.MapPath("~/DateBase/BBDD_English.db");
+                using (SQLiteConnection conn = new SQLiteConnection("Data Source=" + DBpath + ";Version=3;"))
+                {
+                    conn.Open();
+
+                    string query = "INSERT INTO Reservation (Id_User, Room, Departure_date, Entry_date) " +
+                                   "SELECT Id, @room, @departureDate, @entryDate " +
+                                   "FROM Users WHERE Email = @email";
+
+                    using (SQLiteCommand command = new SQLiteCommand(query, conn))
+                    {
+                        command.Parameters.AddWithValue("@email", email);
+                        command.Parameters.AddWithValue("@room", room);
+
+                        
+                        command.Parameters.AddWithValue("@departureDate", departureDate);
+
+                        command.Parameters.AddWithValue("@entryDate", entryDate);
+
+                        int result = command.ExecuteNonQuery();
+
+                        if (result > 0)
+                        {
+                            Label4.Text = "New booking created successfully.";
+                        }
+                        else
+                        {
+                            
+                            Label4.Text = "No user found with the provided email. Please register first.";
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Label4.Text = "An error occurred: " + ex.Message;
             }
         }
     }

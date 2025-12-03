@@ -13,7 +13,7 @@
             <asp:Label ID="LabelMakeName" runat="server" Text="Name:"></asp:Label>
             <asp:TextBox ID="TextMakeName" runat="server"></asp:TextBox>
             <asp:Label ID="LabelMakeFod" runat="server" Text="Date:"></asp:Label>
-            <asp:TextBox ID="TextMakeFod" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextMakeFod" runat="server" TextMode="Date"></asp:TextBox>
             <asp:Label ID="LabelMakeAddress" runat="server" Text="Address:"></asp:Label>
             <asp:TextBox ID="TextMakeAddress" runat="server"></asp:TextBox>
             <asp:Label ID="LabelMakeMobile" runat="server" Text="Mobile:"></asp:Label>
@@ -43,7 +43,7 @@
 
         <div id="formChangeUser">
             <h2>Chanege user</h2>
-            <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="Label3" runat="server" Text="Email user"></asp:Label>
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             <asp:Button ID="Button3" runat="server" Text="Button" />
         </div>
@@ -56,15 +56,18 @@
             <asp:Label ID="LabelMakeBookingRoomNumber" runat="server" Text="Label"></asp:Label>
             <asp:TextBox ID="TextMakeBookingRoomNumber" runat="server"></asp:TextBox>
             <asp:Label ID="LabelMakeBookingCheckInDate" runat="server" Text="Label"></asp:Label>
-            <asp:TextBox ID="TextMakeBookingCheckInDate" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextMakeBookingCheckInDate" runat="server" TextMode="Date"></asp:TextBox>
             <asp:Label ID="LabelMakeBookingCheckOutDate" runat="server" Text="Label"></asp:Label>
-            <asp:TextBox ID="TextMakeBookingCheckOutDate" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextMakeBookingCheckOutDate" runat="server" TextMode="Date"></asp:TextBox>
+            <asp:Button ID="Button4" runat="server" Text="Button" OnClick="Button4_Click" />
+            <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
         </div>
 
         <div id="formDeletebooking">
             <h2>Delete booking</h2>
             <asp:Label ID="LabelDeleteBookingID" runat="server" Text="Label"></asp:Label>
             <asp:TextBox ID="TextDeleteBookingID" runat="server"></asp:TextBox>
+            <asp:Button ID="Button5" runat="server" Text="Button" />
         </div>
 
         <div id="formChangebooking">
@@ -81,7 +84,7 @@
             <asp:TextBox ID="TextBox25" runat="server"></asp:TextBox>
         </div>
         <div id="search">
-            <h2>Search user>
+            <h2>Search user</h2>
             <asp:Label ID="LabelSearchUserEmail" runat="server" Text="Label"></asp:Label>
             <asp:TextBox ID="TextBox26" runat="server"></asp:TextBox>
             <asp:Label ID="LabelSearchBookingID" runat="server" Text="Label"></asp:Label>

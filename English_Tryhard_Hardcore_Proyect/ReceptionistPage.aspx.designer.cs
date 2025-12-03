@@ -303,6 +303,24 @@ namespace English_Tryhard_Hardcore_Proyect
         protected global::System.Web.UI.WebControls.TextBox TextMakeBookingCheckOutDate;
 
         /// <summary>
+        /// Button4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button4;
+
+        /// <summary>
+        /// Label4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label4;
+
+        /// <summary>
         /// LabelDeleteBookingID control.
         /// </summary>
         /// <remarks>
@@ -319,6 +337,15 @@ namespace English_Tryhard_Hardcore_Proyect
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextDeleteBookingID;
+
+        /// <summary>
+        /// Button5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button5;
 
         /// <summary>
         /// LabelChangeBookingID control.
