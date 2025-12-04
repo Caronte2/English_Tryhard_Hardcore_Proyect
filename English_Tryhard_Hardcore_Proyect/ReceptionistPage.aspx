@@ -44,8 +44,25 @@
         <div id="formChangeUser">
             <h2>Chanege user</h2>
             <asp:Label ID="Label3" runat="server" Text="Email user"></asp:Label>
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-            <asp:Button ID="Button3" runat="server" Text="Button" />
+            <asp:TextBox ID="TextSearchForEmail" runat="server"></asp:TextBox>
+            <asp:Button ID="Button3" runat="server" Text="Button" OnClick="Button3_Click" />
+
+            <asp:Label ID="Label5" runat="server" Text="Name"></asp:Label>
+            <asp:TextBox ID="TextUpdateName" runat="server"></asp:TextBox>
+            <asp:Label ID="Label6" runat="server" Text="Date"></asp:Label>
+            <asp:TextBox ID="TextUpdateFOD" runat="server" TextMode="Date"></asp:TextBox>
+            <asp:Label ID="Label7" runat="server" Text="Address"></asp:Label>
+            <asp:TextBox ID="TextUpdateAddress" runat="server"></asp:TextBox>
+            <asp:Label ID="Label8" runat="server" Text="Mobile"></asp:Label>
+            <asp:TextBox ID="TextUpdateMobile" runat="server"></asp:TextBox>
+            <asp:Label ID="Label9" runat="server" Text="Rol"></asp:Label>
+            <asp:DropDownList ID="DropDownList2" runat="server" Width="87px">
+                <asp:ListItem>user</asp:ListItem>
+                <asp:ListItem>receptionist</asp:ListItem>
+            </asp:DropDownList>
+            <asp:Label ID="Label11" runat="server" Text="Password"></asp:Label>
+            <asp:TextBox ID="TextUpdatePassword" runat="server"></asp:TextBox>
+            <asp:Button ID="ButtonUpdateUser" runat="server" Text="Update user" OnClick="ButtonUpdateUser_Click" />
         </div>
 
 
@@ -67,28 +84,32 @@
             <h2>Delete booking</h2>
             <asp:Label ID="LabelDeleteBookingID" runat="server" Text="Label"></asp:Label>
             <asp:TextBox ID="TextDeleteBookingID" runat="server"></asp:TextBox>
-            <asp:Button ID="Button5" runat="server" Text="Button" />
+            <asp:Button ID="Button5" runat="server" Text="Button" OnClick="Button5_Click" />
         </div>
 
         <div id="formChangebooking">
             <h2>Change booking</h2>
-            <asp:Label ID="LabelChangeBookingID" runat="server" Text="Label"></asp:Label>
-            <asp:TextBox ID="TextBox21" runat="server"></asp:TextBox>
-            <asp:Label ID="LabelChangeBookingUserEmail" runat="server" Text="Label"></asp:Label>
-            <asp:TextBox ID="TextBox22" runat="server"></asp:TextBox>
-            <asp:Label ID="LabelChangeBookingRoomNumber" runat="server" Text="Label"></asp:Label>
-            <asp:TextBox ID="TextBox23" runat="server"></asp:TextBox>
-            <asp:Label ID="LabelChangeBookingCheckInDate" runat="server" Text="Label"></asp:Label>
-            <asp:TextBox ID="TextBox24" runat="server"></asp:TextBox>
-            <asp:Label ID="LabelChangeBookingCheckOutDate" runat="server" Text="Label"></asp:Label>
-            <asp:TextBox ID="TextBox25" runat="server"></asp:TextBox>
+            <asp:Label ID="LabelChangeBookingID" runat="server" Text="Id reservation"></asp:Label>
+            <asp:TextBox ID="TextSearchReservationId" runat="server"></asp:TextBox>
+            <asp:Button ID="Button6" runat="server" Text="Search reservation" OnClick="Button6_Click" />
+            <asp:Label ID="LabelChangeBookingUserEmail" runat="server" Text="Room"></asp:Label>
+            <asp:TextBox ID="TextRoomChangeBooking" runat="server"></asp:TextBox>
+            <asp:Label ID="LabelChangeBookingRoomNumber" runat="server" Text="Departure date"></asp:Label>
+            <asp:TextBox ID="TextDepartureChangeBookin" runat="server" TextMode="Date"></asp:TextBox>
+            <asp:Label ID="LabelChangeBookingCheckInDate" runat="server" Text="Entry date"></asp:Label>
+            <asp:TextBox ID="TextEntryDateChangeDate" runat="server" TextMode="Date"></asp:TextBox>
+            <asp:Button ID="Button7" runat="server" Text="Update reservation" OnClick="Button7_Click" />
         </div>
         <div id="search">
             <h2>Search user</h2>
             <asp:Label ID="LabelSearchUserEmail" runat="server" Text="Label"></asp:Label>
-            <asp:TextBox ID="TextBox26" runat="server"></asp:TextBox>
-            <asp:Label ID="LabelSearchBookingID" runat="server" Text="Label"></asp:Label>
-            <asp:TextBox ID="TextBox27" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextEmailSearch" runat="server"></asp:TextBox>
+            <asp:Button ID="Button8" runat="server" OnClick="Button8_Click" Text="Search User" />
+            <asp:Label ID="SearchName" runat="server" Text="Name:"></asp:Label>
+            <asp:Label ID="SearchDate" runat="server" Text="Date:"></asp:Label>
+            <asp:Label ID="SearchAddress" runat="server" Text="Address:"></asp:Label>
+            <asp:Label ID="SearchMobile" runat="server" Text="Mobile:"></asp:Label>
+            <asp:Label ID="SearchRol" runat="server" Text="Rol:"></asp:Label>
         </div>
     </form>
 </body>
