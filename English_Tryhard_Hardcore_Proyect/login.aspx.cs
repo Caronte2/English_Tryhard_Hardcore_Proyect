@@ -70,6 +70,7 @@ namespace English_Tryhard_Hardcore_Proyect
                             else if (user.Role == "receptionist")
                             {
                                 Response.Redirect("./ReceptionistPage.aspx");
+                                Session["User"] = user;
                             }
                         }
                         else

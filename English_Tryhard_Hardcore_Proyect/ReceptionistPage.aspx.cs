@@ -6,6 +6,8 @@ using System.Linq;
 using System.Net;
 using System.Reflection;
 using System.Runtime.Remoting.Messaging;
+using System.Security.Cryptography;
+using System.Text;
 using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
@@ -28,6 +30,13 @@ namespace English_Tryhard_Hardcore_Proyect
             TextRoomChangeBooking.Enabled = false;
             TextDepartureChangeBookin.Enabled=false;
             TextEntryDateChangeDate.Enabled = false;
+
+            UserClass user = Session["User"] as UserClass;
+
+            if (user == null)
+            {
+                Response.Redirect("./login.aspx");
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -70,11 +79,11 @@ namespace English_Tryhard_Hardcore_Proyect
 
             if (!Regex.IsMatch(password, haveNumberPattern) || !Regex.IsMatch(password, haveCapitalLetterPattern) || !Regex.IsMatch(password, haveSymbolsPattern))
             {
-                // Corrected message: It was copying the mobile error previously
                 LabelError.Text = "The password must contain a number, a capital letter, and a symbol.";
                 return;
             }
 
+            password = GetMD5(password);
             try
             {
                 string DBpath = Server.MapPath("~/DateBase/BBDD_English.db");
@@ -463,6 +472,15 @@ namespace English_Tryhard_Hardcore_Proyect
             catch (Exception ex)
             {
                 LabelSearchUser.Text = "An error occurred: " + ex.Message;
+            }
+        }
+
+        private string GetMD5(string password)
+        {
+            using (MD5 md5Hash = MD5.Create())
+            {
+                byte[] data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
+                return BitConverter.ToString(data).Replace("-", "");
             }
         }
     }

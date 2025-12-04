@@ -21,7 +21,7 @@ namespace English_Tryhard_Hardcore_Proyect
 
             if (user == null)
             {
-                Label1.Text = "No user is logged in.";
+                Response.Redirect("./login.aspx");
             }
             else
             {
@@ -29,6 +29,8 @@ namespace English_Tryhard_Hardcore_Proyect
                 LabelEmail.Text = user.Email;
                 LabelDate.Text = user.DateOfBirth;
                 LabelMobile.Text = user.Mobile;
+                LabelAddress.Text = user.Address;
+                LabelRol.Text = user.Role;
                 List<Reservation> reservationList = getListReservation(user.Id.ToString());
 
                 for (int i = 0; i < reservationList.Count; i++)
