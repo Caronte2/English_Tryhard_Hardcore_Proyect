@@ -72,10 +72,10 @@ main {
 
 .login_container {
     background-color: var(--beige-calido);
-    padding: 30px 40px;
+    padding: 30px 60px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 350px;
+    width: 450px;
     max-width: 90%;
     text-align: center;
 }
@@ -97,19 +97,15 @@ main {
 }
 
 
-.input {
+.input-group {
     width: 100%;
     padding: 10px;
-    border: 1px solid var(--azul-suave);
-    border-radius: 4px;
     font-size: 16px;
-    background-color: white;
     color: var(--azul-profundo);
-}
-
-
-.input-group {
-    margin-bottom: 18px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
     text-align: left;
 }
 
@@ -140,5 +136,5 @@ footer {
     padding: 20px;
     text-align: center;
     color: white;
-    margin-top: 40px;
+    margin-top: 64px;
 }
