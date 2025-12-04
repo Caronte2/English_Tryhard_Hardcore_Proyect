@@ -116,7 +116,7 @@ namespace English_Tryhard_Hardcore_Proyect
 
             if (string.IsNullOrEmpty(emailToDelete))
             {
-                Label2.Text = "Email field is required.";
+                LabelDeleteUserErrorr.Text = "Email field is required.";
                 return;
             }
 
@@ -133,18 +133,18 @@ namespace English_Tryhard_Hardcore_Proyect
                         int result = command.ExecuteNonQuery();
                         if (result > 0)
                         {
-                            Label2.Text = "User deleted successfully.";
+                            LabelDeleteUserErrorr.Text = "User deleted successfully.";
                         }
                         else
                         {
-                            Label2.Text = "No user found with the provided email.";
+                            LabelDeleteUserErrorr.Text = "No user found with the provided email.";
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                Label2.Text = "An error occurred: " + ex.Message;
+                LabelDeleteUserErrorr.Text = "An error occurred: " + ex.Message;
             }
         }
 
@@ -181,19 +181,19 @@ namespace English_Tryhard_Hardcore_Proyect
 
                         if (result > 0)
                         {
-                            Label4.Text = "New booking created successfully.";
+                            LabelDeletoBooking.Text = "New booking created successfully.";
                         }
                         else
                         {
-                            
-                            Label4.Text = "No user found with the provided email. Please register first.";
+
+                            LabelDeletoBooking.Text = "No user found with the provided email. Please register first.";
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                Label4.Text = "An error occurred: " + ex.Message;
+                LabelDeletoBooking.Text = "An error occurred: " + ex.Message;
             }
         }
 
@@ -233,7 +233,7 @@ namespace English_Tryhard_Hardcore_Proyect
                             }
                             else
                             {
-                                Label3.Text = "No user found with the provided email.";
+                                LabelChangerUserError.Text = "No user found with the provided email.";
                             }
                         }
                     }
@@ -241,7 +241,7 @@ namespace English_Tryhard_Hardcore_Proyect
             }
             catch (Exception ex) 
             {
-                Label3.Text = "An error occurred: " + ex.Message;
+                LabelChangerUserError.Text = "An error occurred: " + ex.Message;
             }
 
         }
@@ -282,18 +282,18 @@ namespace English_Tryhard_Hardcore_Proyect
 
                         if (rowsAffected > 0)
                         {
-                            Label3.Text = "User updated successfully!";
+                            LabelChangerUser2.Text = "User updated successfully!";
                         }
                         else
                         {
-                            Label3.Text = "Update failed. Email not found.";
+                            LabelChangerUser2.Text = "Update failed. Email not found.";
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                Label3.Text = "An error occurred: " + ex.Message;
+                LabelChangerUser2.Text = "An error occurred: " + ex.Message;
             }
         }
 
@@ -304,7 +304,7 @@ namespace English_Tryhard_Hardcore_Proyect
 
             if (string.IsNullOrEmpty(reservationDelete))
             {
-                Label2.Text = "Email field is required.";
+                LabeDeleteBooking1.Text = "Email field is required.";
                 return;
             }
 
@@ -321,18 +321,18 @@ namespace English_Tryhard_Hardcore_Proyect
                         int result = command.ExecuteNonQuery();
                         if (result > 0)
                         {
-                            Label2.Text = "User deleted successfully.";
+                            LabeDeleteBooking1.Text = "User deleted successfully.";
                         }
                         else
                         {
-                            Label2.Text = "No user found with the provided email.";
+                            LabeDeleteBooking1.Text = "No user found with the provided email.";
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                Label2.Text = "An error occurred: " + ex.Message;
+                LabeDeleteBooking1.Text = "An error occurred: " + ex.Message;
             }
         }
 
@@ -366,7 +366,7 @@ namespace English_Tryhard_Hardcore_Proyect
                             }
                             else
                             {
-                                Label3.Text = "No user found with the provided email.";
+                                LabelChangeBooking.Text = "No user found with the provided email.";
                             }
                         }
                     }
@@ -374,7 +374,7 @@ namespace English_Tryhard_Hardcore_Proyect
             }
             catch (Exception ex)
             {
-                Label3.Text = "An error occurred: " + ex.Message;
+                LabelChangeBooking.Text = "An error occurred: " + ex.Message;
             }
 
 
@@ -410,18 +410,18 @@ namespace English_Tryhard_Hardcore_Proyect
 
                         if (rowsAffected > 0)
                         {
-                            Label3.Text = "User updated successfully!";
+                            LabelChangeBooking2.Text = "User updated successfully!";
                         }
                         else
                         {
-                            Label3.Text = "Update failed. Email not found.";
+                            LabelChangeBooking2.Text = "Update failed. Email not found.";
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                Label3.Text = "An error occurred: " + ex.Message;
+                LabelChangeBooking2.Text = "An error occurred: " + ex.Message;
             }
 
         }
@@ -454,7 +454,7 @@ namespace English_Tryhard_Hardcore_Proyect
                             }
                             else
                             {
-                                Label3.Text = "No user found with the provided email.";
+                                LabelSearchUser.Text = "No user found with the provided email.";
                             }
                         }
                     }
@@ -462,7 +462,7 @@ namespace English_Tryhard_Hardcore_Proyect
             }
             catch (Exception ex)
             {
-                Label3.Text = "An error occurred: " + ex.Message;
+                LabelSearchUser.Text = "An error occurred: " + ex.Message;
             }
         }
     }

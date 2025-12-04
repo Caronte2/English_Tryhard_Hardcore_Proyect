@@ -195,13 +195,13 @@ namespace English_Tryhard_Hardcore_Proyect
         protected global::System.Web.UI.WebControls.Button Button2;
 
         /// <summary>
-        /// Label2 control.
+        /// LabelDeleteUserErrorr control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label LabelDeleteUserErrorr;
 
         /// <summary>
         /// Label3 control.
@@ -229,6 +229,15 @@ namespace English_Tryhard_Hardcore_Proyect
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button3;
+
+        /// <summary>
+        /// LabelChangerUserError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelChangerUserError;
 
         /// <summary>
         /// Label5 control.
@@ -348,6 +357,15 @@ namespace English_Tryhard_Hardcore_Proyect
         protected global::System.Web.UI.WebControls.Button ButtonUpdateUser;
 
         /// <summary>
+        /// LabelChangerUser2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelChangerUser2;
+
+        /// <summary>
         /// LabelMakeBookingUserEmail control.
         /// </summary>
         /// <remarks>
@@ -429,13 +447,13 @@ namespace English_Tryhard_Hardcore_Proyect
         protected global::System.Web.UI.WebControls.Button Button4;
 
         /// <summary>
-        /// Label4 control.
+        /// LabelDeletoBooking control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label4;
+        protected global::System.Web.UI.WebControls.Label LabelDeletoBooking;
 
         /// <summary>
         /// LabelDeleteBookingID control.
@@ -465,6 +483,15 @@ namespace English_Tryhard_Hardcore_Proyect
         protected global::System.Web.UI.WebControls.Button Button5;
 
         /// <summary>
+        /// LabeDeleteBooking1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabeDeleteBooking1;
+
+        /// <summary>
         /// LabelChangeBookingID control.
         /// </summary>
         /// <remarks>
@@ -490,6 +517,15 @@ namespace English_Tryhard_Hardcore_Proyect
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button6;
+
+        /// <summary>
+        /// LabelChangeBooking control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelChangeBooking;
 
         /// <summary>
         /// LabelChangeBookingUserEmail control.
@@ -555,6 +591,15 @@ namespace English_Tryhard_Hardcore_Proyect
         protected global::System.Web.UI.WebControls.Button Button7;
 
         /// <summary>
+        /// LabelChangeBooking2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelChangeBooking2;
+
+        /// <summary>
         /// LabelSearchUserEmail control.
         /// </summary>
         /// <remarks>
@@ -571,6 +616,15 @@ namespace English_Tryhard_Hardcore_Proyect
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextEmailSearch;
+
+        /// <summary>
+        /// LabelSearchUser control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelSearchUser;
 
         /// <summary>
         /// Button8 control.
