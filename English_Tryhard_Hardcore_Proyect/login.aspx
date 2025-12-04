@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Users Landing Page</title>
+    <title>Log In   </title>
     <link rel="stylesheet" href="./Stile/login.css" />
 </head>
 
@@ -30,18 +30,18 @@
                     <h2>Iniciar Sesión</h2>
 
                     <div class="input-group">
-                        <asp:Label ID="Label1" runat="server" Text="Email"></asp:Label>
-                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                        <asp:Label CssClass="label" ID="Label1" runat="server" Text="Email"></asp:Label>
+                        <asp:TextBox CssClass="input-group" ID="TextBox1" runat="server" ></asp:TextBox>
                     </div>
 
                     <div class="input-group">
-                        <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
-                          <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                        <asp:Label class="label" ID="Label2" runat="server" Text="Password"></asp:Label>
+                          <asp:TextBox class="input-group" ID="TextBox2" runat="server" ></asp:TextBox>
                     </div>
 
 
-                <asp:Button ID="ButtonLogin" runat="server" Text="Login" OnClick="Button1_Click"/>
-                <asp:Label ID="Label3" runat="server" Text=""></asp:Label>
+                <asp:Button class="login_button" ID="ButtonLogin" runat="server" Text="Login"  OnClick="Button1_Click"/>
+                <asp:Label class="label" ID="Label3" runat="server" Text=""></asp:Label>
           
                 </div>
 
