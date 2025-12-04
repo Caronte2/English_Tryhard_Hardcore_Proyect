@@ -6,6 +6,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Security.Cryptography;
+using System.Text;
 
 
 
@@ -24,6 +26,8 @@ namespace English_Tryhard_Hardcore_Proyect
 
             email = TextBox1.Text;
             password = TextBox2.Text;
+
+            password = GetMD5(password);
 
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
             {
@@ -45,27 +49,31 @@ namespace English_Tryhard_Hardcore_Proyect
 
                     using (SQLiteDataReader reader = command.ExecuteReader())
                     {
-                        if (reader.Read()) 
+                        if (reader.Read())
                         {
-                            
+
                             UserClass user = new UserClass(
                                 reader.GetInt32(0),
                                 reader.GetString(1),
                                 reader.GetString(6),
                                 reader.GetString(5),
                                 reader.GetString(2),
-                                reader.GetString(4)
+                                reader.GetString(4),
+                                reader.GetString(3)
                             );
 
                             if (user.Role == "user")
                             {
                                 Session["User"] = user;
                                 Response.Redirect("./UserPage.aspx");
-                            }else if(user.Role == "receptionist")
+                            }
+                            else if (user.Role == "receptionist")
                             {
                                 Response.Redirect("./ReceptionistPage.aspx");
                             }
-                        }else{
+                        }
+                        else
+                        {
                             Label3.Text = "Invalid email or password.";
                         }
                     }
@@ -74,6 +82,15 @@ namespace English_Tryhard_Hardcore_Proyect
             catch (Exception ex)
             {
                 Label3.Text = "Error: " + ex.Message;
+            }
+        }
+
+        private string GetMD5(string password)
+        {
+            using (MD5 md5Hash = MD5.Create())
+            {
+                byte[] data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
+                return BitConverter.ToString(data).Replace("-", "");
             }
         }
     }

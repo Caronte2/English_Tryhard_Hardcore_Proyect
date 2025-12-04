@@ -1,0 +1,140 @@
+﻿
+:root {
+    --crema-arena: #F7EEDB;
+    --beige-calido: #E6D8C3;
+    --azul-suave: #A7C7D9;
+    --azul-profundo: #335C81;
+    --oro-tenue: #D8C28E;
+    --font-main: "Segoe UI", Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--crema-arena);
+    color: var(--azul-profundo);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    background-color: var(--oro-tenue);
+}
+
+    header .logo {
+        height: 120px;
+    }
+
+
+nav ul {
+    list-style: none;
+}
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+        nav ul li a {
+            display: inline-block;
+            font-size: 24px;
+            color: var(--azul-profundo);
+            font-weight: 600;
+            padding: 8px 14px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+            nav ul li a:hover {
+                background-color: var(--azul-profundo);
+                color: white;
+            }
+
+
+
+main {
+    min-height: calc(100vh - 250px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_container {
+    background-color: var(--beige-calido);
+    padding: 30px 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.login_form h2 {
+    color: var(--azul-profundo);
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--azul-profundo);
+    text-align: left;
+}
+
+
+.input-group {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: var(--azul-profundo);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+.login_button {
+    background-color: var(--azul-profundo);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+    .login_button:hover {
+        background-color: var(--azul-suave);
+        color: var(--azul-profundo);
+    }
+
+
+
+footer {
+    background-color: var(--azul-profundo);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 64px;
+}
