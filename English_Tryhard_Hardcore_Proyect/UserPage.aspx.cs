@@ -29,6 +29,9 @@ namespace English_Tryhard_Hardcore_Proyect
                 LabelEmail.Text = user.Email;
                 LabelDate.Text = user.DateOfBirth;
                 LabelMobile.Text = user.Mobile;
+                LabelEmail.Text = user.Email;
+                LabelAddress.Text = user.Address;
+                LabelRol.Text = user.Role;
                 List<Reservation> reservationList = getListReservation(user.Id.ToString());
 
                 for (int i = 0; i < reservationList.Count; i++)

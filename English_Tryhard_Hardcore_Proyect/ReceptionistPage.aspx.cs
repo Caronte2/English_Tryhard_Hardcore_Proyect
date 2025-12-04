@@ -6,6 +6,8 @@ using System.Linq;
 using System.Net;
 using System.Reflection;
 using System.Runtime.Remoting.Messaging;
+using System.Security.Cryptography;
+using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -50,7 +52,7 @@ namespace English_Tryhard_Hardcore_Proyect
                 return;
             }
 
-
+            password = GetMD5(password);
             try
             {
                 string DBpath = Server.MapPath("~/DateBase/BBDD_English.db");
@@ -441,5 +443,14 @@ namespace English_Tryhard_Hardcore_Proyect
                 Label3.Text = "An error occurred: " + ex.Message;
             }
         }
+        private string GetMD5(string password)
+        {
+            using (MD5 md5Hash = MD5.Create())
+            {
+                byte[] data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
+                return BitConverter.ToString(data).Replace("-", "");
+            }
+        }
     }
+
 }

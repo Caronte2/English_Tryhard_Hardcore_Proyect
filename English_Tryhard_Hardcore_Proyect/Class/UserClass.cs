@@ -14,7 +14,8 @@ namespace English_Tryhard_Hardcore_Proyect
         private string role;
         private string dateOfBirth;
         private string password;
-        public UserClass(int id, string name, string email, string role, string dateOfBirth, string mobile)
+        private string address;
+        public UserClass(int id, string name, string email, string role, string dateOfBirth, string mobile,string address)
         {
             this.id = id;
             this.name = name;
@@ -22,6 +23,7 @@ namespace English_Tryhard_Hardcore_Proyect
             this.role = role;
             this.dateOfBirth = dateOfBirth;
             this.mobile = mobile;
+            this.address = address;
         }
 
         public int Id
@@ -64,6 +66,12 @@ namespace English_Tryhard_Hardcore_Proyect
         {
             get { return password; }
             set { password = value; }
+        }
+
+        public string Address
+        {
+            get { return address; }
+            set { address = value; }
         }
     }
 }
