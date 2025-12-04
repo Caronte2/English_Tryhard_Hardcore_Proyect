@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Reflection;
 using System.Runtime.Remoting.Messaging;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -42,14 +43,37 @@ namespace English_Tryhard_Hardcore_Proyect
             password = TextMakePassword.Text;
 
 
+            string onlyLettersPattern = @"^[a-zA-Z]+$";
+            string onlyNumbersPattern = @"^[0-9]+$";
+            string haveCapitalLetterPattern = "^(?=.*[A-Z]).+$";
+            string haveNumberPattern = "^(?=.*[0-9]).+$";
+            string haveSymbolsPattern = "^(?=.*[$@€!%*?&]).+$";
+
             if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(date) || string.IsNullOrEmpty(address) ||
                 string.IsNullOrEmpty(mobile) || string.IsNullOrEmpty(rol) || string.IsNullOrEmpty(email) ||
                 string.IsNullOrEmpty(password))
             {
-                Label1.Text = "All fields are required.";
+                LabelError.Text = "All fields are required.";
                 return;
             }
 
+            if (!Regex.IsMatch(name, onlyLettersPattern))
+            {
+                LabelError.Text = "The name must contain only letters.";
+                return;
+            }
+            if (!Regex.IsMatch(mobile, onlyNumbersPattern))
+            {
+                LabelError.Text = "The mobile number must contain only digits.";
+                return;
+            }
+
+            if (!Regex.IsMatch(password, haveNumberPattern) || !Regex.IsMatch(password, haveCapitalLetterPattern) || !Regex.IsMatch(password, haveSymbolsPattern))
+            {
+                // Corrected message: It was copying the mobile error previously
+                LabelError.Text = "The password must contain a number, a capital letter, and a symbol.";
+                return;
+            }
 
             try
             {
@@ -71,18 +95,18 @@ namespace English_Tryhard_Hardcore_Proyect
                         int result = command.ExecuteNonQuery();
                         if (result > 0)
                         {
-                            Label1.Text = "User created successfully.";
+                            LabelError.Text = "User created successfully.";
                         }
                         else
                         {
-                            Label1.Text = "Error creating user.";
+                            LabelError.Text = "Error creating user.";
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                Label1.Text = "An error occurred: " + ex.Message;
+                LabelError.Text = "An error occurred: " + ex.Message;
             }
         }
 

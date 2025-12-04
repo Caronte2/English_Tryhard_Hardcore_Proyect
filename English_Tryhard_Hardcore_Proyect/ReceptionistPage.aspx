@@ -28,7 +28,7 @@
             <asp:Label ID="LabelMakePassword" runat="server" Text="Password:"></asp:Label>
             <asp:TextBox ID="TextMakePassword" runat="server"></asp:TextBox>
             <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
-            <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+            <asp:Label ID="LabelError" runat="server" Text=""></asp:Label>
         </div>
 
 
@@ -68,21 +68,21 @@
 
         <div id="formMakebooking">
             <h2>Make booking</h2>
-            <asp:Label ID="LabelMakeBookingUserEmail" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="LabelMakeBookingUserEmail" runat="server" Text="Id booking"></asp:Label>
             <asp:TextBox ID="TextMakeBookingUserEmail" runat="server"></asp:TextBox>
-            <asp:Label ID="LabelMakeBookingRoomNumber" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="LabelMakeBookingRoomNumber" runat="server" Text="Room"></asp:Label>
             <asp:TextBox ID="TextMakeBookingRoomNumber" runat="server"></asp:TextBox>
-            <asp:Label ID="LabelMakeBookingCheckInDate" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="LabelMakeBookingCheckInDate" runat="server" Text="Entry Date"></asp:Label>
             <asp:TextBox ID="TextMakeBookingCheckInDate" runat="server" TextMode="Date"></asp:TextBox>
-            <asp:Label ID="LabelMakeBookingCheckOutDate" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="LabelMakeBookingCheckOutDate" runat="server" Text="Departure date"></asp:Label>
             <asp:TextBox ID="TextMakeBookingCheckOutDate" runat="server" TextMode="Date"></asp:TextBox>
             <asp:Button ID="Button4" runat="server" Text="Button" OnClick="Button4_Click" />
-            <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="Label4" runat="server" Text=""></asp:Label>
         </div>
 
         <div id="formDeletebooking">
             <h2>Delete booking</h2>
-            <asp:Label ID="LabelDeleteBookingID" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="LabelDeleteBookingID" runat="server" Text="Id Booking"></asp:Label>
             <asp:TextBox ID="TextDeleteBookingID" runat="server"></asp:TextBox>
             <asp:Button ID="Button5" runat="server" Text="Button" OnClick="Button5_Click" />
         </div>
@@ -102,7 +102,7 @@
         </div>
         <div id="search">
             <h2>Search user</h2>
-            <asp:Label ID="LabelSearchUserEmail" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="LabelSearchUserEmail" runat="server" Text="User Email"></asp:Label>
             <asp:TextBox ID="TextEmailSearch" runat="server"></asp:TextBox>
             <asp:Button ID="Button8" runat="server" OnClick="Button8_Click" Text="Search User" />
             <asp:Label ID="SearchName" runat="server" Text="Name:"></asp:Label>
