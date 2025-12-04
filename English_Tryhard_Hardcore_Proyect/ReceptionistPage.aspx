@@ -5,8 +5,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link rel="stylesheet" href="./Stile/Receptionist.css" />
 </head>
 <body>
+    <header>
+    <a href="#">
+        <img class="logo" src="../img/img_logo_sin_fondo.png" alt="Website logo" />
+    </a>
+
+    <nav>
+        <ul>
+            <li><a href="#">Log in</a></li>
+        </ul>
+    </nav>
+</header>
     <form id="form1" runat="server">
         <div id="formMakeUser">
             <h2>Make user</h2>
@@ -27,7 +39,7 @@
             </asp:DropDownList>
             <asp:Label ID="LabelMakePassword" runat="server" Text="Password:"></asp:Label>
             <asp:TextBox ID="TextMakePassword" runat="server"></asp:TextBox>
-            <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
+            <asp:Button ID="Button1" runat="server" Text="Make" OnClick="Button1_Click" />
             <asp:Label ID="LabelError" runat="server" Text=""></asp:Label>
         </div>
 
@@ -36,7 +48,7 @@
             <h2>Delete user</h2>
             <asp:Label ID="LabelDeleteEmail" runat="server" Text="Email user"></asp:Label>
             <asp:TextBox ID="TextDeleteEmail" runat="server"></asp:TextBox>
-            <asp:Button ID="Button2" runat="server" Text="Delete user" OnClick="Button2_Click" />
+            <asp:Button ID="Button2" runat="server" Text="Delete" OnClick="Button2_Click" />
             <asp:Label ID="LabelDeleteUserErrorr" runat="server" Text=""></asp:Label>
         </div>
 
@@ -45,7 +57,7 @@
             <h2>Chanege user</h2>
             <asp:Label ID="Label3" runat="server" Text="Email user"></asp:Label>
             <asp:TextBox ID="TextSearchForEmail" runat="server"></asp:TextBox>
-            <asp:Button ID="Button3" runat="server" Text="Button" OnClick="Button3_Click" />
+            <asp:Button ID="Button3" runat="server" Text="Change" OnClick="Button3_Click" />
             <asp:Label ID="LabelChangerUserError" runat="server" Text=""></asp:Label>
 
             <asp:Label ID="Label5" runat="server" Text="Name"></asp:Label>
@@ -78,7 +90,7 @@
             <asp:TextBox ID="TextMakeBookingCheckInDate" runat="server" TextMode="Date"></asp:TextBox>
             <asp:Label ID="LabelMakeBookingCheckOutDate" runat="server" Text="Departure date"></asp:Label>
             <asp:TextBox ID="TextMakeBookingCheckOutDate" runat="server" TextMode="Date"></asp:TextBox>
-            <asp:Button ID="Button4" runat="server" Text="Button" OnClick="Button4_Click" />
+            <asp:Button ID="Button4" runat="server" Text="Make" OnClick="Button4_Click" />
             <asp:Label ID="LabelDeletoBooking" runat="server" Text=""></asp:Label>
         </div>
 
@@ -86,7 +98,7 @@
             <h2>Delete booking</h2>
             <asp:Label ID="LabelDeleteBookingID" runat="server" Text="Id Booking"></asp:Label>
             <asp:TextBox ID="TextDeleteBookingID" runat="server"></asp:TextBox>
-            <asp:Button ID="Button5" runat="server" Text="Button" OnClick="Button5_Click" />
+            <asp:Button ID="Button5" runat="server" Text="Delete" OnClick="Button5_Click" />
                         <asp:Label ID="LabeDeleteBooking1" runat="server" Text=""></asp:Label>
         </div>
 
@@ -119,5 +131,8 @@
             <asp:Label ID="SearchRol" runat="server" Text="Rol:"></asp:Label>
         </div>
     </form>
+    <footer>
+    <p>All rights reserved</p>
+</footer>
 </body>
 </html>

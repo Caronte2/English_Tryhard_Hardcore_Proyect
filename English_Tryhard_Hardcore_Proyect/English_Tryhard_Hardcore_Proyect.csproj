@@ -78,6 +78,7 @@
     <Content Include="ReceptionistPage.aspx" />
     <Content Include="Stile\Index.css" />
     <Content Include="Stile\login.css" />
+    <Content Include="Stile\Receptionist.css" />
     <Content Include="Stile\UserPage.css" />
     <Content Include="UserPage.aspx" />
     <Content Include="Web.config" />

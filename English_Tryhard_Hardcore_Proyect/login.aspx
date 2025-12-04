@@ -27,7 +27,7 @@
             <div class="login_container">
 
                 <div class="login_form">
-                    <h2>Iniciar Sesión</h2>
+                    <h2>Log in</h2>
 
                     <div class="input-group">
                         <asp:Label CssClass="label" ID="Label1" runat="server" Text="Email"></asp:Label>
@@ -50,7 +50,7 @@
     </form>
 
     <footer>
-        <p>Todos los derechos reservados</p>
+        <p>All rights reserved</p>
     </footer>
 
 </body>

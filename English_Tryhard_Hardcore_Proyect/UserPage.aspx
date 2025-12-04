@@ -6,7 +6,7 @@
 <head runat="server">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Users Landing Page</title>
-    <link rel="stylesheet" href="/Stile/UserPage.css" />
+    <link rel="stylesheet" href="./Stile/UserPage.css" />
 </head>
 
 <body>
@@ -24,7 +24,7 @@
     </header>
 
     <main>
-        <h2>Tus datos</h2>
+        <h2>Your profile</h2>
         <form id="form1" runat="server">
             <div class="user-info">
 
@@ -71,7 +71,7 @@
     </main>
 
     <footer>
-        <p>Todos los derechos reservados</p>
+        <p>All rights reserved</p>
     </footer>
 
 </body>
