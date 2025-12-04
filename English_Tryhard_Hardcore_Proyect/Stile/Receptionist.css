@@ -1,4 +1,4 @@
-﻿/* Paleta de Colores (Mantenida) */
+﻿
 :root {
     --crema-arena: #F7EEDB;
     --beige-calido: #E6D8C3;
@@ -57,9 +57,9 @@ nav ul {
             font-size: 20px;
             color: var(--azul-profundo);
             font-weight: 600;
-            padding: 8px 16px; /* Ajuste para botón */
-            border-radius: 25px; /* Más redondeado */
-            border: 2px solid var(--azul-profundo); /* Borde para aspecto de botón */
+            padding: 8px 16px; 
+            border-radius: 25px;
+            border: 2px solid var(--azul-profundo); 
             transition: background-color 0.3s, color 0.3s, border-color 0.3s;
         }
 
@@ -69,9 +69,6 @@ nav ul {
                 border-color: var(--azul-profundo);
             }
 
-/* --- Estructura Grid Layout --- */
-
-/* Contenedor central para la cuadrícula */
 .main-grid-wrapper {
     flex-grow: 1;
     display: flex;
@@ -79,7 +76,7 @@ nav ul {
     padding: 30px 15px;
 }
 
-/* #form1: EL CONTENEDOR GRID */
+
 #form1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -89,7 +86,7 @@ nav ul {
     padding: 0;
 }
 
-/* --- Módulos de Formulario (Tarjetas) --- */
+
 #formMakeUser,
 #formDeleteUser,
 #formChangeUser,
@@ -97,7 +94,7 @@ nav ul {
 #formDeletebooking,
 #formChangebooking,
 #search {
-    grid-column: auto / span 1; /* Asegura el flujo correcto en la cuadrícula */
+    grid-column: auto / span 1; 
     overflow: hidden;
     width: 100%;
     height: auto;
@@ -112,7 +109,7 @@ nav ul {
     border: 1px solid var(--azul-suave);
 }
 
-    /* Efecto hover sutil */
+
     #formMakeUser:hover, #formDeleteUser:hover, #formChangeUser:hover,
     #formMakebooking:hover, #formDeletebooking:hover, #formChangebooking:hover,
     #search:hover {
@@ -120,7 +117,7 @@ nav ul {
         box-shadow: 0 8px 18px var(--color-shadow);
     }
 
-/* Títulos de Módulos (Más pequeños y ligeros) */
+
 #form1 h2 {
     color: var(--azul-profundo);
     font-size: 22px;
@@ -131,7 +128,7 @@ nav ul {
     text-align: center;
 }
 
-/* --- Labels (Etiquetas) --- */
+
 #form1 asp:Label {
     font-weight: 600;
     margin-top: 5px;
@@ -140,7 +137,7 @@ nav ul {
     color: var(--azul-profundo);
 }
 
-    /* Etiquetas de resultado de búsqueda */
+   
     #form1 asp:Label[id^="Search"] {
         font-weight: 500;
         font-size: 14px;
@@ -149,13 +146,13 @@ nav ul {
         margin-bottom: 0;
     }
 
-/* --- Inputs (TextBox, DropDownList) --- */
+
 #form1 input[type="text"],
 #form1 input[type="date"],
 #form1 select,
 #form1 asp\:TextBox,
 #form1 asp\:DropDownList {
-    /* APLICAMOS !important AQUÍ PARA ANULAR EL WIDTH="87px" DEL HTML */
+   
     width: 100% !important;
     padding: 10px 12px;
     font-size: 15px;
@@ -175,7 +172,7 @@ nav ul {
         outline: none;
     }
 
-/* --- Botones --- */
+
 #form1 input[type="submit"],
 #form1 input[type="button"] {
     padding: 10px 15px;
@@ -196,7 +193,7 @@ nav ul {
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
     }
 
-/* Colores específicos de los botones */
+
 #Button1, #Button3, #Button4, #Button6, #Button7, #ButtonUpdateUser, #Button8 {
     background-color: var(--azul-profundo);
     color: white;
@@ -217,7 +214,7 @@ nav ul {
         color: white;
     }
 
-/* --- Footer --- */
+
 footer {
     background-color: var(--azul-profundo);
     padding: 20px;

@@ -1,4 +1,4 @@
-﻿/* paleta de colores */
+﻿
 :root {
     --crema-arena: #F7EEDB;
     --beige-calido: #E6D8C3;
@@ -19,7 +19,7 @@ body {
     color: var(--azul-profundo);
 }
 
-/* header */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@ header {
         height: 120px;
     }
 
-/* boton log in */
+
 nav ul {
     list-style: none;
 }
@@ -60,7 +60,7 @@ nav ul {
                 color: white;
             }
 
-/* titulo pagina*/
+
 main h3 {
     text-align: center;
     padding: 30px 0;
@@ -68,7 +68,7 @@ main h3 {
     font-weight: 700;
 }
 
-/* servicios */
+
 section {
     display: flex;
     justify-content: space-between;
@@ -81,10 +81,10 @@ section {
 
 .texto-servicio {
     display: flex;
-    flex-direction: column; /* Apila h4 y p verticalmente */
-    max-width: 60%; /* Limita el ancho máximo del bloque de texto para evitar que se estire demasiado */
+    flex-direction: column; 
+    max-width: 60%; 
     margin: 30px;
-    flex-grow: 1; /* Permite que crezca para llenar el espacio disponible */
+    flex-grow: 1; 
 }
 
 section:last-of-type {
@@ -92,52 +92,51 @@ section:last-of-type {
     border-bottom-right-radius: 10px;
 }
 
-/* Alternar automáticamente la posición de la imagen y ahora el  */
+
 section:nth-of-type(2) {
-    flex-direction: row-reverse; /* Cambia el orden de los elementos en secciones pares */
+    flex-direction: row-reverse; 
 }
 
-/* Imagen */
+
 section img {
     width: 400px;
     height: auto;
     border-radius: 12px;
     object-fit: cover;
     border: 3px solid var(--oro-tenue);
-    order: 2; /* Por defecto, la imagen va después de h4 y p */
-    flex-shrink: 0; /* Evita que la imagen se reduzca demasiado en pantallas grandes */
+    order: 2; 
+    flex-shrink: 0; 
 }
 
-/* Títulos dentro de las secciones */
+
 section h4 {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 12px;
     color: var(--azul-profundo);
-    text-align: center; /* Alineado a la izquierda por defecto */
+    text-align: center; 
     text-decoration: underline;
-    order: 0; /* Asegura que el h4 esté primero */
+    order: 0; 
 }
 
 .sections-wrapper {
     background-color: var(--beige-calido);
-    width: 80%; /* Ancho del contenedor principal de las secciones */
-    margin: 0 auto; /* Centra este contenedor */
+    width: 80%; 
+    margin: 0 auto;
     border-radius: 10px;
-    padding: 20px 0; /* Padding interno para que las secciones no toquen el borde */
+    padding: 20px 0;
 }
 
-/* Separador entre secciones */
+
 .separator {
-    display: block; /* Debe ser un bloque para ocupar espacio y tener dimensiones */
-    height: 2px; /* Altura de la línea */
-    background-color: var(--azul-suave); /* Color del separador */
-    width: calc(100% - 160px); /* Ancho, restando el padding lateral total de las secciones (2 * 80px) */
-    margin: 30px auto; /* Centra el separador horizontalmente y da margen vertical */
+    display: block; 
+    height: 2px;
+    background-color: var(--azul-suave); 
+    width: calc(100% - 160px); 
+    margin: 30px auto;
     border-radius: 1px;
 }
 
-/* Textos */
 section p {
     font-size: 18px;
     line-height: 1.5;
@@ -146,10 +145,10 @@ section p {
     background-color: var(--crema-arena);
     border-radius: 10px;
     border-left: 6px solid var(--oro-tenue);
-    order: 1; /* El párrafo va después del h4 */
+    order: 1; 
 }
 
-/* footer */
+
 footer {
     background-color: var(--azul-profundo);
     padding: 20px;
@@ -159,26 +158,24 @@ footer {
 }
 
 
-/* --- Media Queries --- */
+
 
 @media (max-width: 1300px) {
     section {
-        flex-direction: column; /* Columna para todos los elementos en pantallas medianas */
         text-align: center;
         padding: 30px 40px;
     }
 
         section:nth-of-type(2) {
-            flex-direction: column; /* Cambia el orden de los elementos en secciones pares */
-        }
+            flex-direction: column; 
 
 
         section h4 {
-            text-align: center; /* Centrado en pantallas pequeñas */
+            text-align: center; 
             font-size: 24px;
             margin-bottom: 16px;
-            order: 0; /* Siempre arriba */
-            width: 100%; /* Ocupa todo el ancho */
+            order: 0; 
+            width: 100%; 
         }
 
     .texto-servicio {
@@ -187,14 +184,14 @@ footer {
     }
 
     section p {
-        order: 1; /* El párrafo va después del h4 */
+        order: 1; 
         width: auto;
         font-size: 17px;
         padding: 18px;
     }
 
     section img {
-        order: 2; /* La imagen va al final */
+        order: 2; 
         max-width: 400px;
         width: 90%;
         margin-top: 10px;

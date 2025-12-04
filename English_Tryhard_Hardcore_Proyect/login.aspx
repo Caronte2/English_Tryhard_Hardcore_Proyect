@@ -11,13 +11,13 @@
 <body>
 
     <header>
-        <a href="#">
+        <a href="./index.aspx">
             <img class="logo" src="../img/img_logo_sin_fondo.png" alt="Website logo" />
         </a>
 
         <nav>
             <ul>
-                <li><a href="#">Log in</a></li>
+                <li><a href="">Log in</a></li>
             </ul>
         </nav>
     </header>
